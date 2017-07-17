@@ -24,27 +24,27 @@ and if you like it, please rate it there.
 
 ### Frequently Asked Questions
 
-##### How does it work?
+#### How does it work?
 
 It hooks a wrapper `<div>` around the product information above the 'Add to cart' buttons.
 Javascript then measures the height of that wrapper and adjusts the height to automatically align the buttons.
 
-##### Will it work on all themes?
+#### Will it work on all themes?
 
 That depends. It is designed to work on **unmodified** WooCommerce files. If your theme has modified any WooCommerce product templates or added hooks that affect those templates or files, this plugin may not work.
 
 It is assumed that if the theme developer has hacked, hooked, or modified any WooCommerce files, they should have already fixed the problem with aligning the buttons.
 
-##### Can I incorporate it into my own theme?
+#### Can I incorporate it into my own theme?
 
 Yes. However, the hook in your theme's `functions.php` file will need to be modified slightly.
 Instructions on how to do this can be found on our website.
 
-##### Will it work on mobile?
+#### Will it work on mobile?
 
 Yes. Every time the screen is resized, it will re-adjust the buttons.
 
-##### Will it work on older versions?
+#### Will it work on older versions?
 
 Don't know. Try it for yourself. It's Free.
 
@@ -62,7 +62,7 @@ Don't know. Try it for yourself. It's Free.
 ### Credits
 
 Plugin core based on the
-[WordPress-Plugin-Boilerplate](https://wordpress.org/themes/twentyseventeen/ "WordPress-Plugin-Boilerplate")
+[WordPress-Plugin-Boilerplate](https://github.com/DevinVinson/WordPress-Plugin-Boilerplate "WordPress-Plugin-Boilerplate")
 
 ### Plugin Header
 
