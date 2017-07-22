@@ -69,7 +69,7 @@ class Wooalign {
 	public function __construct() {
 
 		$this->plugin_name = 'wooalign';
-		$this->version = '3.1.0';
+		$this->version = '3.1.1';
 
 		$this->load_dependencies();
 		$this->set_locale();
