@@ -4,15 +4,15 @@ Donate link: https://320up.com
 Tags: woocommerce, align, buttons
 Requires at least: 4.8
 Tested up to: 4.8
-Stable tag: 3.1.0
+Stable tag: 3.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A lightweight plugin that aligns WooCommerce 'Add to cart' buttons.
+A plugin that aligns WooCommerce 'Add to cart' buttons.
 
 == Description ==
 
-This lightweight plugin will align your WooCommerce 'Add to cart' buttons.
+This lightweight plugin will automatically align your WooCommerce 'Add to cart' buttons.
 
 Nothing looks worse than visiting a WooCommerce shop page to find the 'Add to cart' buttons scattered all over the place like a dog's breakfast.
 
@@ -20,8 +20,8 @@ This simple plugin solves that problem with a little javascript, and without mod
 
 == Installation ==
 
-* Upload `wooalign.zip` through the 'Plugins' menu in WordPress
-* Or upload unzipped `wooalign` folder to the `/wp-content/plugins/` directory
+* Upload `woo-align-buttons.zip` through the 'Plugins' menu in WordPress
+* Or upload unzipped `woo-align-buttons` folder to the `/wp-content/plugins/` directory
 * Activate the plugin through the 'Plugins' menu in WordPress
 
 == Frequently Asked Questions ==
@@ -57,6 +57,9 @@ Don't know. Try it for yourself. It's Free.
 3. Twenty Seventeen Theme.
 
 == Changelog ==
+
+= 3.1.1 =
+* Updated install folder name
 
 = 3.1.0 =
 * Initial release
