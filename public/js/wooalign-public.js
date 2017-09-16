@@ -1,15 +1,15 @@
+/*! @preserve
+ * Plugin Name:       Woo Align Buttons
+ * Plugin URI:        https://wordpress.org/plugins/woo-align-buttons
+ * Description:       A lightweight plugin to align WooCommerce 'Add to cart' buttons.
+ * Version:           3.1.1
+ * Author:            320up
+ * Author URI:        https://320up.com
+ * License:           GPL-2.0+
+ * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+ */
 (function($) {
   'use strict';
-  /**
-   * Plugin Name:       Woo Align Buttons
-   * Plugin URI:        https://wordpress.org/plugins/woo-align-buttons
-   * Description:       A lightweight plugin to align WooCommerce 'Add to cart' buttons.
-   * Version:           3.1.0
-   * Author:            320up
-   * Author URI:        https://320up.com
-   * License:           GPL-2.0+
-   * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
-   */
   if ($('ul.products').length) {
     var wooAlignButtons = function() {
       $('ul.products').each(function() {
@@ -29,11 +29,11 @@
         $.each(gridRows, function() {
           var tallestWooInfo = 0;
           $.each(this, function() {
-            $(this).find('div.woo-height').css({
+            $(this).find('#woo-height').css({
               'min-height': '',
               'padding-bottom': ''
             });
-            var wooInfoHeight = $(this).find('div.woo-height').height();
+            var wooInfoHeight = $(this).find('#woo-height').height();
             var wooSpacing = 10;
             var totalHeight = wooInfoHeight + wooSpacing;
             if (totalHeight > tallestWooInfo) {
@@ -41,13 +41,13 @@
             }
           });
           $.each(this, function() {
-            $(this).find('div.woo-height').css('min-height', tallestWooInfo);
+            $(this).find('#woo-height').css('min-height', tallestWooInfo);
           });
         });
       });
     };
     wooAlignButtons();
-    $(window).load(function() {
+    $(window).on('load', function() {
       $(window).on('hold-your-horses', function() {
         wooAlignButtons();
       });
