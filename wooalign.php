@@ -30,6 +30,8 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
+define( 'PLUGIN_VERSION', '3.1.1' );
+
 /**
  * The code that runs during plugin activation.
  * This action is documented in includes/class-wooalign-activator.php
