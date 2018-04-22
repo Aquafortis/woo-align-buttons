@@ -13,16 +13,18 @@
  * @package           Wooalign
  *
  * @wordpress-plugin
- * Plugin Name:       Woo Align Buttons
- * Plugin URI:        https://wordpress.org/plugins/woo-align-buttons
- * Description:       A lightweight plugin to align WooCommerce 'Add to cart' buttons.
- * Version:           3.1.1
- * Author:            320up
- * Author URI:        https://320up.com
- * License:           GPL-2.0+
- * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       wooalign
- * Domain Path:       /languages
+ * Plugin Name:          Woo Align Buttons
+ * Plugin URI:           https://wordpress.org/plugins/woo-align-buttons
+ * Description:          A lightweight plugin to align WooCommerce 'Add to cart' buttons.
+ * Version:              3.3.5
+ * WC requires at least: 3.0.0
+ * WC tested up to:      3.3.5
+ * Author:               320up
+ * Author URI:           https://320up.com
+ * License:              GPL-2.0+
+ * License URI:          http://www.gnu.org/licenses/gpl-2.0.txt
+ * Text Domain:          wooalign
+ * Domain Path:          /languages
  */
 
 // If this file is called directly, abort.
@@ -30,7 +32,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define( 'PLUGIN_VERSION', '3.1.1' );
+define( 'PLUGIN_VERSION', '3.3.5' );
 
 /**
  * The code that runs during plugin activation.
