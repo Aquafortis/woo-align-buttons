@@ -35,6 +35,10 @@ That depends. It is designed to work on **unmodified** WooCommerce files. If you
 
 It is assumed that if the theme developer has hacked, hooked, or modified any WooCommerce files, they should have already fixed the problem with aligning the buttons.
 
+If it is not working on your theme chances are your theme has been modified or hacked, and this plugin will NOT work.
+
+You can either choose another theme, or contact your theme developer and ask them to fix their theme.
+
 #### Can I incorporate it into my own theme?
 
 Yes. However, the hook in your theme's `functions.php` file will need to be modified slightly.
@@ -70,12 +74,16 @@ Plugin core based on the
 - Donate link: https://320up.com
 - Tags: woocommerce, align, buttons
 - Requires at least: 4.7
-- Tested up to: 4.9.5
-- Stable tag: 3.3.5
+- Tested up to: 4.9.8
+- Stable tag: 3.4.4
 - License: GPLv2 or later
 - License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 ### Changelog
+
+- 3.4.4
+- Tested on WP version 4.9.8
+- Tested on WooCommerce version 3.4.4
 
 - 3.3.5
 - Tested on WP version 4.9.5

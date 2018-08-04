@@ -61,4 +61,9 @@
       $(window).trigger('hold-your-horses');
     }, 250);
   });
+  // Scroll function for ajax load more scripts
+  $(window).on('scroll', function() {
+    wooAlignButtons();
+  });
+  // End scroll function
 })(jQuery);
