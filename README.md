@@ -5,9 +5,9 @@ A plugin that aligns WooCommerce 'Add to cart' buttons.
 
 ### Description
 
-This lightweight plugin will automatically align your WooCommerce 'Add to cart' buttons.
+This lightweight plugin will automatically align your WooCommerce "Add to cart" buttons.
 
-Nothing looks worse than visiting a WooCommerce shop page to find the 'Add to cart' buttons scattered all over the place like a dog's breakfast.
+Nothing looks worse than visiting a WooCommerce shop page to find the "Add to cart" buttons scattered all over the place like a dog's breakfast.
 
 This simple plugin solves that problem with a little javascript, and without modifying any core files or templates.
 
