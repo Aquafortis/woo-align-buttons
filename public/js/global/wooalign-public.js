@@ -2,16 +2,16 @@
  * Plugin Name:       Woo Align Buttons
  * Plugin URI:        https://wordpress.org/plugins/woo-align-buttons
  * Description:       A lightweight plugin to align WooCommerce "Add to cart" buttons.
- * Version:           3.5.3
+ * Version:           3.5.3.1
  * Author:            320up
  * Author URI:        https://320up.com
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  */
-(function($) {
-  "use strict";
-  if ($("ul.products").length) {
-    var wooAlignButtons = function() {
+var wooAlignButtons = function() {
+  (function($) {
+    "use strict";
+    if ($("ul.products").length) {
       $("ul.products").each(function() {
         var gridRows = [];
         var tempRow = [];
@@ -45,26 +45,19 @@
           });
         });
       });
-    };
-    wooAlignButtons();
-    $(window).on("load", function() {
-      wooAlignButtons();
-      $(window).on("hold-your-horses", function() {
-        wooAlignButtons();
-      });
-    });
-  }
-  var resizeTimer;
-  $(window).resize(function() {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(function() {
-      $(window).trigger("hold-your-horses");
-    }, 250);
-  });
-  // Scroll function for ajax load more issues
-  // Uncomment next 3 lines to use
-  //$(window).on("scroll", function() {
-    //wooAlignButtons();
-  //});
-  // End scroll function
-})(jQuery);
+    }
+  })(jQuery);
+};
+window.onload = function() {
+  wooAlignButtons();
+};
+window.onresize = function() {
+  wooAlignButtons();
+};
+// Remove functions below if not required
+window.onscroll = function() {
+  wooAlignButtons();
+};
+document.onmousemove = function(event) {
+  wooAlignButtons(event);
+};
