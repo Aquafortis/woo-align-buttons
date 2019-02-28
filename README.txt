@@ -3,8 +3,8 @@ Contributors: 320up
 Donate link: https://320up.com
 Tags: woocommerce, align, buttons
 Requires at least: 4.7
-Tested up to: 5.0.2
-Stable tag: 3.5.3
+Tested up to: 5.1
+Stable tag: 3.5.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -68,6 +68,10 @@ Note: As mentioned above, if your theme has been heavily modified and the button
 3. Twenty Seventeen Theme.
 
 == Changelog ==
+
+= 3.5.5 =
+* Tested on WP version 5.1
+* Tested on WooCommerce version 3.5.5
 
 = 3.5.3 =
 * Tested on WP version 5.0.2
