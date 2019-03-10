@@ -96,7 +96,11 @@ class Wooalign_Public {
 		 * class.
 		 */
 
+		/** Try using this alternate script if you experience issues with your theme. */
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/wooalign-public.js', array( 'jquery' ), $this->version, true );
+		/** Comment out the line above with 2 forward slashes. Then uncomment the line below. (Vice versa to reset. Do not use both at once.) */
+		//wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/global/wooalign-public.js', array( 'jquery' ), $this->version, true );
+		/** Update the file. */
 
 	}
 

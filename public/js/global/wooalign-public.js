@@ -2,7 +2,7 @@
  * Plugin Name:       Woo Align Buttons
  * Plugin URI:        https://wordpress.org/plugins/woo-align-buttons
  * Description:       A lightweight plugin to align WooCommerce "Add to cart" buttons.
- * Version:           3.5.5.1
+ * Version:           3.5.6.1
  * Author:            320up
  * Author URI:        https://320up.com
  * License:           GPL-2.0+
@@ -26,22 +26,39 @@ var wooAlignButtons = function() {
             gridRows.push(tempRow);
           }
         });
-        $.each(gridRows, function() {
+        $(gridRows).each(function() {
+          var title = "h2.woocommerce-loop-product__title";
+          var tallestTitleInfo = 0;
+          $(this).each(function() {
+            $(this).find(title).css({
+              "height": "",
+            });
+            var titleInfoHeight = $(this).find(title).height();
+            var titleSpacing = 1;
+            var titleHeight = titleInfoHeight + titleSpacing;
+            if (titleHeight > tallestTitleInfo) {
+              tallestTitleInfo = titleHeight;
+            }
+          });
+          $(this).each(function() {
+            $(this).find(title).css("height", tallestTitleInfo);
+          });
+          var wooheight = "#woo-height";
           var tallestWooInfo = 0;
-          $.each(this, function() {
-            $(this).find("#woo-height").css({
+          $(this).each(function() {
+            $(this).find(wooheight).css({
               "min-height": "",
               "padding-bottom": ""
             });
-            var wooInfoHeight = $(this).find("#woo-height").height();
+            var wooInfoHeight = $(this).find(wooheight).height();
             var wooSpacing = 10;
             var totalHeight = wooInfoHeight + wooSpacing;
             if (totalHeight > tallestWooInfo) {
               tallestWooInfo = totalHeight;
             }
           });
-          $.each(this, function() {
-            $(this).find("#woo-height").css("min-height", tallestWooInfo);
+          $(this).each(function() {
+            $(this).find(wooheight).css("min-height", tallestWooInfo);
           });
         });
       });

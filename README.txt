@@ -4,7 +4,7 @@ Donate link: https://320up.com
 Tags: woocommerce, align, buttons
 Requires at least: 4.7
 Tested up to: 5.1
-Stable tag: 3.5.5
+Stable tag: 3.5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,7 +33,7 @@ Javascript then measures the height of that wrapper and adjusts the height to au
 
 = Will it work on all themes? =
 
-That depends. It is designed to work on **unmodified** WooCommerce files. If your theme has modified any WooCommerce product templates or added hooks that affect those templates or files, this plugin may not work.
+No. It is designed to work on **unmodified** WooCommerce files. If your theme has modified any WooCommerce product templates or added hooks that affect those templates or files, this plugin may not work.
 
 It is assumed that if the theme developer has hacked, hooked, or modified any WooCommerce files, they should have already fixed the problem with aligning the buttons.
 
@@ -56,9 +56,10 @@ Don't know. Try it for yourself. It's Free.
 
 = Troubleshooting =
 
-If you are having issues with a modified theme, there are some options in the `wooalign-public.js` file you can try.
-Just uncomment the appropriate lines, save the file, and clear any caches you may have.
-Path to file: `/wp-content/plugins/woo-align-buttons/public/js/wooalign-public.js`
+If you are having issues with a modified theme, try using the alternate script.
+Replace the script in: `/wp-content/plugins/woo-align-buttons/public/js/wooalign-public.js`
+With the script in: `/wp-content/plugins/woo-align-buttons/public/js/global/wooalign-public.js`
+The alternate script also has an experimental function to align Product Titles.
 Note: As mentioned above, if your theme has been heavily modified and the buttons are outside of the original scope, you may have to consider using another theme.
 
 == Screenshots ==
@@ -68,6 +69,11 @@ Note: As mentioned above, if your theme has been heavily modified and the button
 3. Twenty Seventeen Theme.
 
 == Changelog ==
+
+= 3.5.6 =
+* Updated alternate script in global folder
+* See Troubleshooting section for usage
+* Tested on WooCommerce version 3.5.6
 
 = 3.5.5 =
 * Tested on WP version 5.1
