@@ -16,7 +16,7 @@
  * Plugin Name:          Woo Align Buttons
  * Plugin URI:           https://wordpress.org/plugins/woo-align-buttons
  * Description:          A lightweight plugin to align WooCommerce "Add to cart" buttons.
- * Version:              3.5.6
+ * Version:              3.6.0
  * WC requires at least: 3.0.0
  * WC tested up to:      3.5.6
  * Author:               320up
@@ -32,7 +32,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define( 'PLUGIN_VERSION', '3.5.6' );
+define( 'PLUGIN_VERSION', '3.6.0' );
 
 /**
  * The code that runs during plugin activation.

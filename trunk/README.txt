@@ -18,6 +18,8 @@ Nothing looks worse than visiting a WooCommerce shop page to find the "Add to ca
 
 This simple plugin solves that problem with a little javascript, and without modifying any core files or templates.
 
+This version will also align your Product Titles thus allowing longer titles or larger fonts.
+
 == Installation ==
 
 * Upload `woo-align-buttons.zip` through the "Plugins" menu in WordPress
@@ -56,9 +58,8 @@ Don't know. Try it for yourself. It's Free.
 
 = Troubleshooting =
 
-If you are having issues with a modified theme, try using the alternate script.
-Replace the script in: `/wp-content/plugins/woo-align-buttons/public/js/wooalign-public.js`
-With the script in: `/wp-content/plugins/woo-align-buttons/public/js/global/wooalign-public.js`
+If you are having issues with a modified theme, try using version 3.5.7.
+Version 3.5.7 can be downloaded from the bottom of the page [Here](https://wordpress.org/plugins/woo-align-buttons/advanced/).
 Note: As mentioned above, if your theme has been heavily modified and the buttons are outside of the original scope, you may have to consider using another theme.
 
 == Screenshots ==
@@ -68,6 +69,18 @@ Note: As mentioned above, if your theme has been heavily modified and the button
 3. Twenty Seventeen Theme.
 
 == Changelog ==
+
+= 3.6.0 =
+* This update also aligns your product titles
+* The new script is Global and can be called within other Plugins
+* Tested on WooCommerce version 3.5.6
+
+= 3.5.7 =
+* Custom version for modified themes
+* Do not use unless you have issues with your theme
+* This version has additional event triggers
+* Global folder has been removed
+* Tested on WooCommerce version 3.5.6
 
 = 3.5.6 =
 * Updated alternate script in global folder
