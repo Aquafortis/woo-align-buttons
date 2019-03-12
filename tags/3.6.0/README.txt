@@ -85,7 +85,7 @@ Note: As mentioned above, if your theme has been heavily modified and the button
 = 3.5.6 =
 * Updated alternate script in global folder
 * See Troubleshooting section for usage
-* Tested on WooCommerce version 3.6.0
+* Tested on WooCommerce version 3.5.6
 
 = 3.5.5 =
 * Tested on WP version 5.1
