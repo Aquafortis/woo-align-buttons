@@ -26,24 +26,22 @@
             gridRows.push(tempRow);
           }
         });
-        $(gridRows).each(function() {
-          var wooheight = "#woo-height";
-          var tallestWooInfo = 0;
-          $(this).each(function() {
-            $(this).find(wooheight).css({
-              "min-height": "",
-              "padding-bottom": ""
-            });
-            var wooInfoHeight = $(this).find(wooheight).height();
-            var wooSpacing = 10;
-            var totalHeight = wooInfoHeight + wooSpacing;
-            if (totalHeight > tallestWooInfo) {
-              tallestWooInfo = totalHeight;
-            }
+        var wooheight = "#woo-height";
+        var tallestWoo = 0;
+        $(this).each(function() {
+          $(this).find(wooheight).css({
+            "min-height": "",
+            "padding-bottom": ""
           });
-          $(this).each(function() {
-            $(this).find(wooheight).css("min-height", tallestWooInfo);
-          });
+          var wooHeightInfo = $(this).find(wooheight).height();
+          var wooSpacing = 10;
+          var totalHeight = wooHeightInfo + wooSpacing;
+          if (totalHeight > tallestWoo) {
+            tallestWoo = totalHeight;
+          }
+        });
+        $(this).each(function() {
+          $(this).find(wooheight).css("min-height", tallestWoo);
         });
       });
     };

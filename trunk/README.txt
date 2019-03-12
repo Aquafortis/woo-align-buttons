@@ -59,7 +59,6 @@ Don't know. Try it for yourself. It's Free.
 If you are having issues with a modified theme, try using the alternate script.
 Replace the script in: `/wp-content/plugins/woo-align-buttons/public/js/wooalign-public.js`
 With the script in: `/wp-content/plugins/woo-align-buttons/public/js/global/wooalign-public.js`
-The alternate script also has an experimental function to align Product Titles.
 Note: As mentioned above, if your theme has been heavily modified and the buttons are outside of the original scope, you may have to consider using another theme.
 
 == Screenshots ==

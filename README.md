@@ -1,5 +1,5 @@
 # Woo Align Buttons
-[Resolved] woocommerce align add to cart buttons
+[Resolved] Woocommerce align add to cart buttons
 
 A plugin that aligns WooCommerce 'Add to cart' buttons.
 

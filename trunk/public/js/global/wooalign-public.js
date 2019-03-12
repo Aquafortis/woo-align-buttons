@@ -27,38 +27,22 @@ var wooAlignButtons = function() {
           }
         });
         $(gridRows).each(function() {
-          var title = "h2.woocommerce-loop-product__title";
-          var tallestTitleInfo = 0;
-          $(this).each(function() {
-            $(this).find(title).css({
-              "height": "",
-            });
-            var titleInfoHeight = $(this).find(title).height();
-            var titleSpacing = 1;
-            var titleHeight = titleInfoHeight + titleSpacing;
-            if (titleHeight > tallestTitleInfo) {
-              tallestTitleInfo = titleHeight;
-            }
-          });
-          $(this).each(function() {
-            $(this).find(title).css("height", tallestTitleInfo);
-          });
           var wooheight = "#woo-height";
-          var tallestWooInfo = 0;
+          var tallestWoo = 0;
           $(this).each(function() {
             $(this).find(wooheight).css({
               "min-height": "",
               "padding-bottom": ""
             });
-            var wooInfoHeight = $(this).find(wooheight).height();
+            var wooHeightInfo = $(this).find(wooheight).height();
             var wooSpacing = 10;
-            var totalHeight = wooInfoHeight + wooSpacing;
-            if (totalHeight > tallestWooInfo) {
-              tallestWooInfo = totalHeight;
+            var totalHeight = wooHeightInfo + wooSpacing;
+            if (totalHeight > tallestWoo) {
+              tallestWoo = totalHeight;
             }
           });
           $(this).each(function() {
-            $(this).find(wooheight).css("min-height", tallestWooInfo);
+            $(this).find(wooheight).css("min-height", tallestWoo);
           });
         });
       });
