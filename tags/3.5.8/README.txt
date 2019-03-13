@@ -20,13 +20,17 @@ This simple plugin solves that problem with a little javascript, and without mod
 
 New beta version 3.6.0 is now available for testing.
 This new version will also align your Product Titles thus allowing longer titles or larger fonts.
-It will also compact excessive white space on small screens for better viewing. (Set to 420px wide.)
+It will also remove excessive white space on small screens for better viewing. (Set to 420px wide.)
 Version 3.6.0 can be downloaded from the bottom of the page [Here](https://wordpress.org/plugins/woo-align-buttons/advanced/).
+First you will need to deactivate and delete the current "Woo Align Buttons" plugin from your website, then go to "Add New" plugin, then "Upload Plugin", then Activate.
+You may need to clear your browser cache and other caches to see it working.
+If you do use it and find any issues, let us know in the Support section.
+If you like the "Woo Align Buttons" plugin, please take the time to rate it.
 
 == Installation ==
 
 * Upload `woo-align-buttons.zip` through the "Plugins" menu in WordPress
-* Or upload unzipped `woo-align-buttons` folder to the `/wp-content/plugins/` directory
+* Else upload unzipped `woo-align-buttons` folder to the `/wp-content/plugins/` directory
 * Activate the plugin through the "Plugins" menu in WordPress
 
 == Frequently Asked Questions ==
