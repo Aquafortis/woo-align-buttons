@@ -108,4 +108,4 @@ Note: As mentioned above, if your theme has been heavily modified and the button
 * Upgrade to remove WC version warning.
 
 = 3.1.1 =
-* No need to upgrade.
+* No need to upgrade
