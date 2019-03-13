@@ -4,7 +4,7 @@ Donate link: https://320up.com
 Tags: woocommerce, align, buttons
 Requires at least: 4.7
 Tested up to: 5.1
-Stable tag: 3.5.6
+Stable tag: 3.5.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -73,6 +73,7 @@ Note: As mentioned above, if your theme has been heavily modified and the button
 * Custom version for modified themes
 * Do not use unless you have issues with your theme
 * This version has additional event triggers
+* Global folder has been removed
 * Tested on WooCommerce version 3.5.6
 
 = 3.5.6 =
@@ -110,8 +111,11 @@ Note: As mentioned above, if your theme has been heavily modified and the button
 
 == Upgrade Notice ==
 
+= 3.5.7 =
+* No need to upgrade
+
 = 3.3.5 =
-* Upgrade to remove WC version warning.
+* Upgrade to remove WC version warning
 
 = 3.1.1 =
-* No need to upgrade.
+* No need to upgrade
