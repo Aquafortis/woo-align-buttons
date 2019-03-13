@@ -4,7 +4,7 @@ Donate link: https://320up.com
 Tags: woocommerce, align, buttons
 Requires at least: 4.7
 Tested up to: 5.1
-Stable tag: 3.5.6
+Stable tag: 3.5.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -20,11 +20,14 @@ This simple plugin solves that problem with a little javascript, and without mod
 
 This version will also align your Product Titles thus allowing longer titles or larger fonts.
 
+It will also compact excessive white space on small screens for better viewing. (Set to 420px wide.)
+
 == Installation ==
 
 * Upload `woo-align-buttons.zip` through the "Plugins" menu in WordPress
 * Or upload unzipped `woo-align-buttons` folder to the `/wp-content/plugins/` directory
 * Activate the plugin through the "Plugins" menu in WordPress
+* Select another version from the bottom of the page [Here](https://wordpress.org/plugins/woo-align-buttons/advanced/).
 
 == Frequently Asked Questions ==
 
@@ -58,6 +61,8 @@ Don't know. Try it for yourself. It's Free.
 
 = Troubleshooting =
 
+If you are having issues with this latest version 3.6.0, revert back to version 3.5.8.
+Version 3.5.8 can be downloaded from the bottom of the page [Here](https://wordpress.org/plugins/woo-align-buttons/advanced/).
 If you are having issues with a modified theme, try using version 3.5.7.
 Version 3.5.7 can be downloaded from the bottom of the page [Here](https://wordpress.org/plugins/woo-align-buttons/advanced/).
 Note: As mentioned above, if your theme has been heavily modified and the buttons are outside of the original scope, you may have to consider using another theme.
@@ -71,8 +76,17 @@ Note: As mentioned above, if your theme has been heavily modified and the button
 == Changelog ==
 
 = 3.6.0 =
-* This update also aligns your product titles
-* The new script is Global and can be called within other Plugins
+* Beta version - Use with caution
+* Revert back to version 3.5.8 if you have any issues
+* See Troubleshooting section for instructions
+* This version also aligns your product titles
+* Uses new technology that may not work on all devices
+* Disables script on small screens for compact viewing
+* Tested on WooCommerce version 3.5.6
+
+= 3.5.8 =
+* Stable version
+* Global script can now be called within other Plugins
 * Tested on WooCommerce version 3.5.6
 
 = 3.5.7 =
@@ -117,8 +131,11 @@ Note: As mentioned above, if your theme has been heavily modified and the button
 
 == Upgrade Notice ==
 
+= 3.5.7 =
+* No need to upgrade
+
 = 3.3.5 =
 * Upgrade to remove WC version warning.
 
 = 3.1.1 =
-* No need to upgrade.
+* No need to upgrade

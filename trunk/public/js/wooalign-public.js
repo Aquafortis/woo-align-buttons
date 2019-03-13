@@ -44,6 +44,11 @@ var wooAlignButtons = function() {
             $(this).each(function() {
               $(this).find(title).css("height", tallestTitle);
             });
+            if (window.matchMedia("(max-width: 420px)").matches) {
+              $(this).each(function() {
+                $(this).find(title).css("height", "auto");
+              });
+            }
           }
           var wooheight = "#woo-height";
           var tallestWoo = 0;
@@ -62,6 +67,11 @@ var wooAlignButtons = function() {
           $(this).each(function() {
             $(this).find(wooheight).css("min-height", tallestWoo);
           });
+          if (window.matchMedia("(max-width: 420px)").matches) {
+            $(this).each(function() {
+              $(this).find(wooheight).css("min-height", "0");
+            });
+          }
         });
       });
     }
