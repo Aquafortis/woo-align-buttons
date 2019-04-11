@@ -9,56 +9,64 @@
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  */
 var wooAlignButtons = function() {
-  (function($) {
-    "use strict";
-    if ($("ul.products").length) {
-      $("ul.products").each(function() {
-        var gridRows = [];
-        var tempRow = [];
-        var wooGridElements = $(this).children("li");
-        wooGridElements.each(function(index) {
-          if ($(this).css("clear") !== "none" && index !== 0) {
-            gridRows.push(tempRow);
-            tempRow = [];
-          }
-          tempRow.push(this);
-          if (wooGridElements.length === index + 1) {
-            gridRows.push(tempRow);
-          }
-        });
-        $(gridRows).each(function() {
-          var wooheight = "#woo-height";
-          var tallestWoo = 0;
-          $(this).each(function() {
-            $(this).find(wooheight).css({
-              "min-height": "",
-              "padding-bottom": ""
+    (function($) {
+        "use strict";
+        if ($("ul.products").length) {
+            $("ul.products").each(function() {
+                var gridRows = [];
+                var tempRow = [];
+                var wooGridElements = $(this).children("li");
+                wooGridElements.each(function(index) {
+                    if ($(this).css("clear") !== "none" && index !== 0) {
+                        gridRows.push(tempRow);
+                        tempRow = [];
+                    }
+                    tempRow.push(this);
+                    if (wooGridElements.length === index + 1) {
+                        gridRows.push(tempRow);
+                    }
+                });
+                $(gridRows).each(function() {
+                    var wooheight = "#woo-height";
+                    var tallestWoo = 0;
+                    $(this).each(function() {
+                        $(this).find(wooheight).css({
+                            "min-height": "",
+                            "padding-bottom": ""
+                        });
+                        var wooHeightInfo = $(this).find(wooheight).height();
+                        var wooSpacing = 10;
+                        var totalHeight = wooHeightInfo + wooSpacing;
+                        if (totalHeight > tallestWoo) {
+                            tallestWoo = totalHeight;
+                        }
+                    });
+                    $(this).each(function() {
+                        $(this).find(wooheight).css("min-height", tallestWoo);
+                    });
+                });
             });
-            var wooHeightInfo = $(this).find(wooheight).height();
-            var wooSpacing = 10;
-            var totalHeight = wooHeightInfo + wooSpacing;
-            if (totalHeight > tallestWoo) {
-              tallestWoo = totalHeight;
-            }
-          });
-          $(this).each(function() {
-            $(this).find(wooheight).css("min-height", tallestWoo);
-          });
-        });
-      });
-    }
-  })(jQuery);
+        }
+    })(jQuery);
 };
 window.onload = function() {
-  wooAlignButtons();
+    wooAlignButtons();
 };
 window.onresize = function() {
-  wooAlignButtons();
+    wooAlignButtons();
 };
+window.addEventListener("load", function() {
+    setTimeout(function() {
+        wooAlignButtons();
+    }, 2000);
+    setTimeout(function() {
+        wooAlignButtons();
+    }, 5000);
+});
 // Remove functions below if not required
 window.onscroll = function() {
-  wooAlignButtons();
+    wooAlignButtons();
 };
 document.onmousemove = function(event) {
-  wooAlignButtons(event);
+    wooAlignButtons(event);
 };
