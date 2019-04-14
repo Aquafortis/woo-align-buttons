@@ -44,7 +44,8 @@ var wooAlignButtons = function() {
                         $(this).each(function() {
                             $(this).find(title).css("height", tallestTitle);
                         });
-                        if (window.matchMedia("(max-width: 420px)").matches) {
+                        // Change pixels as needed (originally 420px)
+                        if (window.matchMedia("(max-width: 220px)").matches) {
                             $(this).each(function() {
                                 $(this).find(title).css("height", "auto");
                             });
@@ -67,7 +68,8 @@ var wooAlignButtons = function() {
                     $(this).each(function() {
                         $(this).find(wooheight).css("min-height", tallestWoo);
                     });
-                    if (window.matchMedia("(max-width: 420px)").matches) {
+                    // Change pixels as needed (originally 420px)
+                    if (window.matchMedia("(max-width: 220px)").matches) {
                         $(this).each(function() {
                             $(this).find(wooheight).css("min-height", "0");
                         });
@@ -98,3 +100,14 @@ window.onscroll = function() {
 document.onmousemove = function(event) {
     wooAlignButtons(event);
 };
+window.addEventListener("click", function() {
+    setTimeout(function() {
+        wooAlignButtons();
+    }, 2000);
+    setTimeout(function() {
+        wooAlignButtons();
+    }, 3000);
+    setTimeout(function() {
+        wooAlignButtons();
+    }, 5000);
+});
