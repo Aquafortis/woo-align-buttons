@@ -11,11 +11,11 @@
 var wooAlignButtons = function() {
     (function($) {
         "use strict";
-        if ($("ul.products").length) {
-            $("ul.products").each(function() {
+        if ($("ul.products,div.owl-stage").length) {
+            $("ul.products,div.owl-stage").each(function() {
                 var gridRows = [];
                 var tempRow = [];
-                var wooGridElements = $(this).children("li");
+                var wooGridElements = $(this).children("li,div.owl-item");
                 wooGridElements.each(function(index) {
                     if ($(this).css("clear") !== "none" && index !== 0) {
                         gridRows.push(tempRow);
@@ -45,7 +45,7 @@ var wooAlignButtons = function() {
                             $(this).find(title).css("height", tallestTitle);
                         });
                         // Change pixels as needed (originally 420px)
-                        if (window.matchMedia("(max-width: 220px)").matches) {
+                        if (window.matchMedia("(max-width: 320px)").matches) {
                             $(this).each(function() {
                                 $(this).find(title).css("height", "auto");
                             });
@@ -69,7 +69,7 @@ var wooAlignButtons = function() {
                         $(this).find(wooheight).css("min-height", tallestWoo);
                     });
                     // Change pixels as needed (originally 420px)
-                    if (window.matchMedia("(max-width: 220px)").matches) {
+                    if (window.matchMedia("(max-width: 320px)").matches) {
                         $(this).each(function() {
                             $(this).find(wooheight).css("min-height", "0");
                         });
