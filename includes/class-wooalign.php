@@ -70,7 +70,7 @@ class Wooalign {
 		if ( defined( 'PLUGIN_VERSION' ) ) {
 			$this->version = PLUGIN_VERSION;
 		} else {
-			$this->version = '3.5.8';
+			$this->version = '100.5.0';
 		}
 		$this->plugin_name = 'wooalign';
 
