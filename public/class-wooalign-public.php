@@ -73,7 +73,7 @@ class Wooalign_Public {
 		 * class.
 		 */
 
-		 wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/wooalign-public.css', array(), $this->version, 'all' );
+		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/wooalign-public.css', array(), $this->version, 'all' );
 
 	}
 
@@ -96,15 +96,15 @@ class Wooalign_Public {
 		 * class.
 		 */
 
-		 wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/wooalign-public.js', array( 'jquery' ), $this->version, true );
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/wooalign-public.js', array( 'jquery' ), $this->version, true );
 
 	}
 
-  /**
-   * Add wrapper for woo-height script.
-   *
-   * @since    3.1.0
-   */
+  	/**
+   	 * Add wrapper for woo-height script.
+   	 *
+   	 * @since    3.1.0
+   	 */
 
 	public function wooalign_product_link_open() {
 		echo '<div id="woo-height">';
