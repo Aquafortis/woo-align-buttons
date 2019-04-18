@@ -75,6 +75,11 @@ Note: As mentioned above, if your theme has been heavily modified and the button
 
 == Changelog ==
 
+= 100.5.1 =
+* Custom version - Use with caution
+* This version is designed only for OceanWP Theme
+* Report any issues in support section
+
 = 100.5.0 =
 * Custom version - Use with caution
 * This version is designed to aid modified themes
