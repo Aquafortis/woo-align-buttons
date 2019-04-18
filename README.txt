@@ -61,7 +61,7 @@ Don't know. Try it for yourself. It's Free.
 
 = Troubleshooting =
 
-If you are having issues with this version, revert back to version 3.5.8.
+If you are having issues with this latest version, revert back to version 3.5.8.
 Version 3.5.8 can be downloaded from the bottom of the page [Here](https://wordpress.org/plugins/woo-align-buttons/advanced/).
 If you are having issues with a modified theme, try using version 3.5.7.
 Version 3.5.7 can be downloaded from the bottom of the page [Here](https://wordpress.org/plugins/woo-align-buttons/advanced/).
@@ -74,16 +74,6 @@ Note: As mentioned above, if your theme has been heavily modified and the button
 3. Twenty Seventeen Theme.
 
 == Changelog ==
-
-= 100.5.1 =
-* Custom version - Use with caution
-* This version is designed only for OceanWP Theme
-* Report any issues in support section
-
-= 100.5.0 =
-* Custom version - Use with caution
-* This version is designed to aid modified themes
-* There is no guarantee it will work
 
 = 3.6.0 =
 * Beta version - Use with caution
