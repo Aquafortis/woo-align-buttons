@@ -2,7 +2,7 @@
  * Plugin Name:       Woo Align Buttons
  * Plugin URI:        https://wordpress.org/plugins/woo-align-buttons
  * Description:       A lightweight plugin to align WooCommerce "Add to cart" buttons.
- * Version:           100.5.1
+ * Version:           3.6.0
  * Author:            320up
  * Author URI:        https://320up.com
  * License:           GPL-2.0+
@@ -11,11 +11,11 @@
 var wooAlignButtons = function() {
     (function($) {
         "use strict";
-        if ($("ul.products,div.owl-stage").length) {
-            $("ul.products,div.owl-stage").each(function() {
+        if ($("ul.products").length) {
+            $("ul.products").each(function() {
                 var gridRows = [];
                 var tempRow = [];
-                var wooGridElements = $(this).children("li,div.owl-item");
+                var wooGridElements = $(this).children("li");
                 wooGridElements.each(function(index) {
                     if ($(this).css("clear") !== "none" && index !== 0) {
                         gridRows.push(tempRow);
@@ -27,7 +27,7 @@ var wooAlignButtons = function() {
                     }
                 });
                 $(gridRows).each(function() {
-                    var title = "h2.woocommerce-loop-product__title,li.title";
+                    var title = "h2.woocommerce-loop-product__title";
                     if ($(title).length) {
                         var tallestTitle = 0;
                         $(this).each(function() {
@@ -94,25 +94,4 @@ window.addEventListener("load", function() {
     setTimeout(function() {
         wooAlignButtons();
     }, 5000);
-});
-// Remove functions below if not required
-window.onscroll = function() {
-    //wooAlignButtons();
-};
-document.onmousemove = function(event) {
-    //wooAlignButtons(event);
-};
-window.addEventListener("click", function() {
-    setTimeout(function() {
-        wooAlignButtons();
-    }, 2000);
-    setTimeout(function() {
-        wooAlignButtons();
-    }, 3000);
-    setTimeout(function() {
-        wooAlignButtons();
-    }, 5000);
-    setTimeout(function() {
-        wooAlignButtons();
-    }, 7000);
 });

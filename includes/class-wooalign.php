@@ -70,7 +70,7 @@ class Wooalign {
 		if ( defined( 'PLUGIN_VERSION' ) ) {
 			$this->version = PLUGIN_VERSION;
 		} else {
-			$this->version = '100.5.1';
+			$this->version = '3.6.0';
 		}
 		$this->plugin_name = 'wooalign';
 
@@ -172,10 +172,8 @@ class Wooalign {
 
 		//$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
-		//$this->loader->add_action( 'woocommerce_before_shop_loop_item', $plugin_public, 'wooalign_product_link_open' );
-		//$this->loader->add_action( 'woocommerce_after_shop_loop_item', $plugin_public, 'wooalign_product_link_close' );
-		$this->loader->add_action( 'ocean_before_archive_product_categories', $plugin_public, 'wooalign_product_link_open' );
-		$this->loader->add_action( 'ocean_before_archive_product_add_to_cart', $plugin_public, 'wooalign_product_link_close' );
+		$this->loader->add_action( 'woocommerce_before_shop_loop_item', $plugin_public, 'wooalign_product_link_open' );
+		$this->loader->add_action( 'woocommerce_after_shop_loop_item', $plugin_public, 'wooalign_product_link_close' );
 
 	}
 
