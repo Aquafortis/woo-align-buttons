@@ -154,8 +154,8 @@ class Wooalign {
 
 		$plugin_admin = new Wooalign_Admin( $this->get_plugin_name(), $this->get_version() );
 
-		//$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
-		//$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
+    	//$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
+    	//$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 
 	}
 
@@ -170,10 +170,10 @@ class Wooalign {
 
 		$plugin_public = new Wooalign_Public( $this->get_plugin_name(), $this->get_version() );
 
-		//$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
-		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
-		$this->loader->add_action( 'woocommerce_before_shop_loop_item', $plugin_public, 'wooalign_product_link_open' );
-		$this->loader->add_action( 'woocommerce_after_shop_loop_item', $plugin_public, 'wooalign_product_link_close' );
+    	//$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
+    	$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
+    	$this->loader->add_action( 'woocommerce_before_shop_loop_item', $plugin_public, 'wooalign_product_link_open' );
+    	$this->loader->add_action( 'woocommerce_after_shop_loop_item', $plugin_public, 'wooalign_product_link_close' );
 
 	}
 

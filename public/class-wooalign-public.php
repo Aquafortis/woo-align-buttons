@@ -100,18 +100,18 @@ class Wooalign_Public {
 
 	}
 
-  	/**
-   	 * Add wrapper for woo-height script.
-   	 *
-   	 * @since    3.1.0
-   	 */
+	/**
+	 * Add wrapper for woo-height script.
+	 *
+	 * @since    3.1.0
+	 */
 
-	public function wooalign_product_link_open() {
-		echo '<div id="woo-height">';
-	}
+    public function wooalign_product_link_open() {
+        echo '<div id="woo-height">';
+    }
 
-	public function wooalign_product_link_close() {
-		echo '</div>';
-	}
+    public function wooalign_product_link_close() {
+        echo '</div>';
+    }
 
 }

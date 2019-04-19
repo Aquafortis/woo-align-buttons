@@ -3,8 +3,8 @@ Contributors: 320up
 Donate link: https://320up.com
 Tags: woocommerce, align, buttons
 Requires at least: 4.7
-Tested up to: 5.1
-Stable tag: 3.5.8
+Tested up to: 5.1.1
+Stable tag: 3.6.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -20,14 +20,14 @@ This simple plugin solves that problem with a little javascript, and without mod
 
 This version will also align your Product Titles thus allowing longer titles or larger fonts.
 
-It will also compact excessive white space on small screens for better viewing. (Set to 420px wide.)
+If you have any issues, let us know in the Support section.
+If you like the “Woo Align Buttons” plugin, please take the time to rate it.
 
 == Installation ==
 
 * Upload `woo-align-buttons.zip` through the "Plugins" menu in WordPress
 * Else upload unzipped `woo-align-buttons` folder to the `/wp-content/plugins/` directory
 * Activate the plugin through the "Plugins" menu in WordPress
-* Select another version from the bottom of the page [Here](https://wordpress.org/plugins/woo-align-buttons/advanced/).
 
 == Frequently Asked Questions ==
 
@@ -49,7 +49,8 @@ You can either choose another theme, or contact your theme developer and ask the
 = Can I incorporate it into my own theme? =
 
 Yes. However, the hook in your theme's `functions.php` file will need to be modified slightly.
-A sample child-theme can be found here on [GitHub](https://github.com/Aquafortis/woo-align-child).
+A sample child theme can be found here on [GitHub](https://github.com/Aquafortis/woo-align-child).
+Download child theme version releases from here on [GitHub](https://github.com/Aquafortis/woo-align-child/releases).
 
 = Will it work on mobile? =
 
@@ -61,11 +62,14 @@ Don't know. Try it for yourself. It's Free.
 
 = Troubleshooting =
 
-If you are having issues with this latest version, revert back to version 3.5.8.
-Version 3.5.8 can be downloaded from the bottom of the page [Here](https://wordpress.org/plugins/woo-align-buttons/advanced/).
-If you are having issues with a modified theme, try using version 3.5.7.
-Version 3.5.7 can be downloaded from the bottom of the page [Here](https://wordpress.org/plugins/woo-align-buttons/advanced/).
-Note: As mentioned above, if your theme has been heavily modified and the buttons are outside of the original scope, you may have to consider using another theme.
+If you are having issues with a modified theme, try using a custom version.
+Custom versions can be found here on [GitHub](https://github.com/Aquafortis/woo-align-buttons/releases).
+Select a custom version that best suits your situation.
+Download the Source code (zip) file.
+Install as you would any other Plugin.
+**If your theme has been heavily modified and the buttons are outside of the original scope, you may have to consider using another theme.**
+If you are able to do some of your own coding, a child theme can usually be made to work.
+See examples of child themes here on [GitHub](https://github.com/Aquafortis/woo-align-child/releases).
 
 == Screenshots ==
 
@@ -76,16 +80,10 @@ Note: As mentioned above, if your theme has been heavily modified and the button
 == Changelog ==
 
 = 3.6.0 =
-* Beta version - Use with caution
-* Revert back to version 3.5.8 if you have any issues
-* See Troubleshooting section for instructions
 * This version also aligns your product titles
-* Uses new technology that may not work on all devices
-* Disables script on small screens for compact viewing
-* Tested on WooCommerce version 3.5.6
+* Tested on WooCommerce version 3.6.1
 
 = 3.5.8 =
-* Stable version
 * Global script can now be called within other Plugins
 * Tested on WooCommerce version 3.5.6
 
