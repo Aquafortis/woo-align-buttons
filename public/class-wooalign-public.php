@@ -96,7 +96,7 @@ class Wooalign_Public {
 		 * class.
 		 */
 
-		//wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/wooalign-public-pure.js', array(), $this->version, true );
+		//wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/wooalign-public-pure.js', array(), $this->version, false );
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/wooalign-public.js', array( 'jquery' ), $this->version, true );
 
 	}

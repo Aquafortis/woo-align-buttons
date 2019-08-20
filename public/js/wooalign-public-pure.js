@@ -12,8 +12,6 @@
 // Activate script in class-wooalign-public.php
 var wooAlignButtons = function(title, wrapper) {
     "use strict";
-    title = typeof title !== "undefined" ? title : "h2.woocommerce-loop-product__title";
-    wrapper = typeof wrapper !== "undefined" ? wrapper : "#woo-height";
     var parent = document.querySelectorAll("ul.products");
     if (parent.length) {
         parent.forEach(function(value, index, array) {
@@ -42,7 +40,7 @@ var wooAlignButtons = function(title, wrapper) {
                                         // null
                                     } else {
                                         elem.style.minHeight = "0px";
-                                        elem.style.paddingBottom = "0px";
+                                        elem.style.paddingBottom = "";
                                         var height = elem.clientHeight;
                                         heights.push(height);
                                     }
@@ -56,7 +54,7 @@ var wooAlignButtons = function(title, wrapper) {
                                         elem.style.minHeight = high + space + "px";
                                         if (window.matchMedia("(max-width: 320px)").matches) {
                                             elem.style.minHeight = "0px";
-                                            elem.style.paddingBottom = "0px";
+                                            elem.style.paddingBottom = "";
                                         }
                                     }
                                 });
@@ -71,28 +69,27 @@ var wooAlignButtons = function(title, wrapper) {
     }
 };
 window.onload = function() {
-    // Must have two entries. Use null for empty entry if required.
-    //wooAlignButtons("h2.woocommerce-loop-product__title", "#woo-height");
-    //wooAlignButtons(null,"#woo-height");
-    wooAlignButtons();
+    // Must have two entries.
+    /* Content of wooAlignButtons(title, wrapper); */
+    wooAlignButtons("h2.woocommerce-loop-product__title", "#woo-height");
 };
 window.addEventListener("resize", function() {
     setTimeout(function() {
-        wooAlignButtons();
+        wooAlignButtons("h2.woocommerce-loop-product__title", "#woo-height");
     }, 250);
 });
 /*
 window.addEventListener("scroll", function() {
     setTimeout(function() {
-        wooAlignButtons();
+        wooAlignButtons("h2.woocommerce-loop-product__title", "#woo-height");
     }, 250);
 });
 */
 window.addEventListener("load", function() {
     setTimeout(function() {
-        wooAlignButtons();
+        wooAlignButtons("h2.woocommerce-loop-product__title", "#woo-height");
     }, 2000);
     setTimeout(function() {
-        wooAlignButtons();
+        wooAlignButtons("h2.woocommerce-loop-product__title", "#woo-height");
     }, 5000);
 });
