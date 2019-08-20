@@ -78,13 +78,6 @@ window.addEventListener("resize", function() {
         wooAlignButtons("h2.woocommerce-loop-product__title", "#woo-height");
     }, 250);
 });
-/*
-window.addEventListener("scroll", function() {
-    setTimeout(function() {
-        wooAlignButtons("h2.woocommerce-loop-product__title", "#woo-height");
-    }, 250);
-});
-*/
 window.addEventListener("load", function() {
     setTimeout(function() {
         wooAlignButtons("h2.woocommerce-loop-product__title", "#woo-height");

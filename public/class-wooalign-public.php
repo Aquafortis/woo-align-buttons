@@ -94,9 +94,14 @@ class Wooalign_Public {
 		 * The Wooalign_Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
+		 *
+		 * false = script in head
+		 * true = script in footer
+		 *
+		 * Only use in head if calling script externally
 		 */
 
-		//wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/wooalign-public-pure.js', array(), $this->version, false );
+		//wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/wooalign-public-pure.js', array(), $this->version, true );
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/wooalign-public.js', array( 'jquery' ), $this->version, true );
 
 	}
