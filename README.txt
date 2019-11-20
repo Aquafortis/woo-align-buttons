@@ -79,7 +79,7 @@ See examples of child themes here on [GitHub](https://github.com/Aquafortis/woo-
 
 == Changelog ==
 
-= 3.6.2 =
+= 3.6.3 =
 * Tested on WordPress version 5.3
 * Tested on WooCommerce version 3.8.0
 
