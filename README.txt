@@ -50,7 +50,6 @@ You can either choose another theme, or contact your theme developer and ask the
 
 Yes. However, the hook in your theme's `functions.php` file will need to be modified slightly.
 A sample child theme can be found here on [GitHub](https://github.com/Aquafortis/woo-align-child).
-Download child theme version releases from here on [GitHub](https://github.com/Aquafortis/woo-align-child/releases).
 
 = Will it work on mobile? =
 
@@ -62,14 +61,12 @@ Don't know. Try it for yourself. It's Free.
 
 = Troubleshooting =
 
-If you are having issues with a modified theme, try using a custom version.
-Custom versions can be found here on [GitHub](https://github.com/Aquafortis/woo-align-buttons/releases).
-Select a custom version that best suits your situation.
-Download the Source code (zip) file.
-Install as you would any other Plugin.
+If you are having issues with a modified theme, please leave details in the Support section.
+Don't forget to leave a link to your website for us to inspect.
+We may be able to give you a link to a custom version that might help. (No guarantees)
 **If your theme has been heavily modified and the buttons are outside of the original scope, you may have to consider using another theme.**
 If you are able to do some of your own coding, a child theme can usually be made to work.
-See examples of child themes here on [GitHub](https://github.com/Aquafortis/woo-align-child/releases).
+A sample child theme can be found here on [GitHub](https://github.com/Aquafortis/woo-align-child).
 
 == Screenshots ==
 
