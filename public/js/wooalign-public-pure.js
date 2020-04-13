@@ -2,7 +2,7 @@
  * Plugin Name:       Woo Align Buttons
  * Plugin URI:        https://wordpress.org/plugins/woo-align-buttons
  * Description:       A lightweight plugin to align WooCommerce "Add to cart" buttons.
- * Version:           3.6.3
+ * Version:           3.6.4
  * Author:            320up
  * Author URI:        https://320up.com
  * License:           GPL-2.0+
@@ -71,18 +71,18 @@ var wooAlignButtons = function(title, wrapper) {
 window.onload = function() {
     // Must have two entries.
     /* Content of wooAlignButtons(title, wrapper); */
-    wooAlignButtons("h2.woocommerce-loop-product__title", "#woo-height");
+    wooAlignButtons("h2.woocommerce-loop-product__title", ".woo-height");
 };
 window.addEventListener("resize", function() {
     setTimeout(function() {
-        wooAlignButtons("h2.woocommerce-loop-product__title", "#woo-height");
+        wooAlignButtons("h2.woocommerce-loop-product__title", ".woo-height");
     }, 250);
 });
 window.addEventListener("load", function() {
     setTimeout(function() {
-        wooAlignButtons("h2.woocommerce-loop-product__title", "#woo-height");
+        wooAlignButtons("h2.woocommerce-loop-product__title", ".woo-height");
     }, 2000);
     setTimeout(function() {
-        wooAlignButtons("h2.woocommerce-loop-product__title", "#woo-height");
+        wooAlignButtons("h2.woocommerce-loop-product__title", ".woo-height");
     }, 5000);
 });

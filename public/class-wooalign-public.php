@@ -113,7 +113,7 @@ class Wooalign_Public {
 	 */
 
 	public function wooalign_product_link_open() {
-		echo '<div id="woo-height">';
+		echo '<div class="woo-height">';
 	}
 
 	public function wooalign_product_link_close() {
