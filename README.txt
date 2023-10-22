@@ -3,8 +3,8 @@ Contributors: 320up
 Donate link: https://320up.com
 Tags: woocommerce, align, buttons
 Requires at least: 4.7
-Tested up to: 5.4.1
-Stable tag: 3.6.5
+Tested up to: 6.3.2
+Stable tag: 3.6.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -20,7 +20,9 @@ This simple plugin solves that problem with a little javascript, and without mod
 
 This version will also align your Product Titles thus allowing longer titles or larger fonts.
 
-If you have any issues, let us know in the Support section.
+See FAQ about issue with WooCommerce blocks.
+
+If you have any other issues, let us know in the Support section.
 If you like the “Woo Align Buttons” plugin, please take the time to rate it.
 
 == Installation ==
@@ -51,6 +53,24 @@ You can either choose another theme, or contact your theme developer and ask the
 Yes. However, the hook in your theme's `functions.php` file will need to be modified slightly.
 A sample child theme can be found here on [GitHub](https://github.com/Aquafortis/woo-align-child).
 
+= Will it work with WooCommerce blocks? =
+
+No. WooCommerce has changed the products grid template for their blocks.
+Their new template does not allow for separating the 'Add to cart' buttons.
+Without the ability to separate the buttons, this plugin can not work.
+This issue would need to be taken up with WooCommerce Support.
+
+= Latest update not working? =
+
+There appears to be a handful of users experiencing issues with the latest updates.
+This is most likely caused by previous version files being cached on the users system.
+You can try clearing all of your cache files.
+Otherwise you can revert back to this carbon copy of version 3.6.6:
+Download version 100.6.6 from the bottom of the page <a href="https://wordpress.org/plugins/woo-align-buttons/advanced/">Here</a>.
+Delete the version you currently have installed, then upload and activate version 100.6.6.
+Clear any caches you have, and let us know how you go.
+You should not receive any out-of-date warnings with this version.
+
 = Will it work on mobile? =
 
 Yes. Every time the screen is resized, it will re-adjust the buttons.
@@ -75,6 +95,24 @@ A sample child theme can be found here on [GitHub](https://github.com/Aquafortis
 3. Twenty Seventeen Theme.
 
 == Changelog ==
+
+= 3.6.9 =
+* Tested on WordPress version 6.3.2
+* Tested on WooCommerce version 8.2.1
+
+= 3.6.8 =
+* Tested on WordPress version 6.1.1
+* Tested on WooCommerce version 7.2.2
+
+= 3.6.7 =
+* General housekeeping
+* FAQ about WooCommerce blocks
+* Tested on WordPress version 5.8.1
+* Tested on WooCommerce version 5.8.0
+
+= 3.6.6 =
+* Tested on WordPress version 5.7.2
+* Tested on WooCommerce version 5.4.1
 
 = 3.6.5 =
 * Remove WooCommerce version message
@@ -132,7 +170,7 @@ A sample child theme can be found here on [GitHub](https://github.com/Aquafortis
 * Tested on WP version 4.9.8
 * Tested on WooCommerce version 3.4.5
 * Added document change function
-* Optional scroll function in `wooalign-public.js` file
+* Optional scroll function in `woo-align-public.js` file
 
 = 3.4.4 =
 * Tested on WP version 4.9.8
